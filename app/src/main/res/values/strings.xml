@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Blockchain</string>
+    <string name="no_internet">No Internet</string>
+    <string name="connect">Connect</string>
+    <string name="base_url">http://10.0.2.2:5000/</string>
+    <string name="transfer">TRANSFER</string>
+    <string name="reward">Reward</string>
+</resources>

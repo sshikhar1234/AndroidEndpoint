@@ -1,0 +1,114 @@
+<LinearLayout android:layout_height="wrap_content"
+   android:orientation="vertical"
+    style="@style/styleXAlertDialog"
+    android:id="@+id/layoutContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:id="@+id/layoutPay"
+    app:cardUseCompatPadding="true"
+    tools:layout_editor_absoluteY="368dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+
+      android:orientation="vertical"
+      android:padding="@dimen/padding_16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="@dimen/margin_8"
+        android:background="@drawable/bg_rounded_border_grey"
+        android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_margin="1dp"
+          android:gravity="center"
+          android:paddingStart="@dimen/padding_5"
+          android:paddingEnd="@dimen/padding_5"
+          android:text="Recipient"
+          android:textColor="@android:color/black" />
+
+      <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@android:color/darker_gray" />
+
+      <EditText
+          android:layout_width="match_parent"
+          android:backgroundTint="@android:color/transparent"
+          android:drawableStart="@drawable/ic_hash"
+          android:drawablePadding="@dimen/padding_5"
+          android:gravity="center_vertical"
+          android:id="@+id/editTextRecipient"
+          android:paddingStart="@dimen/padding_5"
+          android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="@dimen/margin_8"
+        android:background="@drawable/bg_rounded_border_grey"
+        android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_margin="1dp"
+          android:layout_marginStart="50dp"
+          android:gravity="center"
+          android:paddingEnd="@dimen/padding_5"
+          android:text=" Amount   "
+          android:textColor="@android:color/black" />
+
+      <View
+          android:layout_width="1dp"
+          android:layout_height="match_parent"
+          android:background="@android:color/darker_gray" />
+
+      <EditText
+          android:layout_width="match_parent"
+          android:backgroundTint="@android:color/transparent"
+          android:drawableStart="@drawable/ic_hash"
+          android:drawablePadding="@dimen/padding_5"
+          android:id="@+id/editTextAmount"
+          android:gravity="center_vertical"
+          android:paddingStart="@dimen/padding_5"
+          android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_rounded_button_accent"
+        android:drawableStart="@drawable/ic_pay"
+        android:drawablePadding="@dimen/padding_5"
+        android:paddingStart="@dimen/padding_16"
+        android:paddingEnd="@dimen/padding_16"
+        android:id="@+id/btn_pay"
+        android:text="Pay"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+  </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+  <include layout="@layout/ic_item_add_or_mine_block"></include>
+  <include layout="@layout/ic_item_add_or_mine_block"/>
+</LinearLayout>
